@@ -1,6 +1,7 @@
 import "./App.css";
 import LogoFcc from "./components/LogoFcc";
-import Todo from "./components/Todo";
+import TaskForm from "./components/TaskForm";
+// import Todo from "./components/Todo";
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
       <LogoFcc />
       <div className="todo-list-main">
         <h1>NoStateNode</h1>
-        <Todo 
-        text="aprender react"
-        />
+        <TaskForm />
       </div>
     </div>
   );

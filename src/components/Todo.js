@@ -2,11 +2,13 @@ import React from "react";
 import "../stylesheets/Todo.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-function Todo({ text }) {
+function Todo({ text, complete }) {
   return (
-    <div className="todo-container">
+    <div className={complete ? "todo-container complete" : "todo-container"}>
       <div className="todo-txt">{text}</div>
-      <div className="todo-icon"><AiOutlineCloseCircle /></div>
+      <div className="todo-container-icons">
+        <AiOutlineCloseCircle className="todo-icon" />
+      </div>
     </div>
   );
 }

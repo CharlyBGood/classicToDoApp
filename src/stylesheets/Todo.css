@@ -23,5 +23,13 @@
 }
 
 .todo-icon {
-  width: 5em;
+  font-size: 1.3em;
+  width: 1em;
+  height: 1em;
+  margin: .4em;
+}
+
+.todo-container.complete {
+  background-color: #5a01a7;
+  text-decoration: line-through;
 }
