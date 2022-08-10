@@ -3,10 +3,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .task-input {
-  width: 19em;
+  width: 75%;
   font-size: 1.1em;
   background-color: #212121;
   padding: .9em 2em .6em 1em;
@@ -18,8 +20,9 @@
 }
 
 .task-btn {
+  text-align: center;
   font-family: Roboto, sans-serif;
-  padding: .9em 2em .6em 1em;
+  padding: .8em;
   outline: none;
   border: none;
   border-radius: .3em;

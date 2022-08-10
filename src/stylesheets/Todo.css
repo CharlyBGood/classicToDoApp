@@ -5,9 +5,9 @@
   border: 1px solid #f5deb3;
   border-radius: .6em;
   background-color: #1b1b32;
-  margin: .3em 0;
+  margin: .4em auto;
   padding: .6em 1em .6em 1.2em;
-  width: 31em;
+  width: 85%;
   min-height: 2.5em;
   cursor: pointer;
 }

@@ -1,3 +1,11 @@
+.todo-app {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
   font-size: 1.5em;
@@ -6,10 +14,10 @@ h1 {
   margin: 1.1em 0;
 }
 .todo-list-main {
-  width: 36em;
+  width: 65%;
   min-height: 31em;
   background-color: #d0d0d5;
   padding: 1.4em;
-  margin: .8em;
-  border-radius: .6em;
+  margin: 0.8em;
+  border-radius: 0.6em;
 }

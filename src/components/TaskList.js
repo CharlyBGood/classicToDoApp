@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesheets/Todo.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-function Todo({ text, complete }) {
+function TaskList({ text, complete }) {
   return (
     <div className={complete ? "todo-container complete" : "todo-container"}>
       <div className="todo-txt">{text}</div>
@@ -13,4 +13,4 @@ function Todo({ text, complete }) {
   );
 }
 
-export default Todo;
+export default TaskList;
