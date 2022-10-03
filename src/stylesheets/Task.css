@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #f5deb3;
+  border: 1px solid #2c1102;
   border-radius: .6em;
-  background-color: #1b1b32;
+  background-color: #b94908;
   margin: .4em auto;
   padding: .6em 1em .6em 1.2em;
   width: 85%;
@@ -13,11 +13,11 @@
 }
 
 .todo-container:nth-child(3n + 1) {
-  background-color: #1b1b32;
+  background-color: #b94908;
 }
 
 .todo-container:nth-child(3n + 2) {
-  background-color: #2a2a40;
+  background-color: #d6611d;
 }
 
 .todo-container:nth-child(3n + 3) {
