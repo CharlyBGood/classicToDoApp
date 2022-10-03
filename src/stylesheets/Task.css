@@ -45,3 +45,10 @@
   background-color: #5a01a7;
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 850px) {
+  .todo-container {
+    padding: 0;
+    width: 100%;
+  }
+}

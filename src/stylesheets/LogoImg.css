@@ -1,0 +1,23 @@
+.img-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5em;
+  }
+  
+  .img-logo {
+    margin: 0 auto;
+    width: 31vw;
+    height: auto;
+  }
+
+  @media screen and (max-width: 850px) {
+    .img-logo-container {
+      margin: 0;
+    }
+
+    .img-logo {
+      width: 55%;
+    }
+  }

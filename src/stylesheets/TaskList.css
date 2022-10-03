@@ -4,3 +4,9 @@
     justify-content: center;
     margin: 3% auto;
 }
+
+@media screen and (max-width: 850px) {
+    .task-list-container {
+        margin: .5em 0;
+    }
+}
