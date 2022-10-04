@@ -25,7 +25,7 @@ function TaskForm(props) {
       <input
         className="task-input"
         type="text"
-        placeholder="Share a resource"
+        placeholder="Write a Task"
         name="text"
         onChange={handleChange}
       />
