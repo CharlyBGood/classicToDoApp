@@ -4,6 +4,7 @@ import "../stylesheets/TaskForm.css";
 
 function TaskForm(props) {
   const [input, setInput] = useState("");
+  const form = document.getElementById("form");
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -18,10 +19,11 @@ function TaskForm(props) {
       complete: false,
     };
     props.onSubmit(newTask);
+    form.reset();
   };
 
   return (
-    <form className="task-form" onSubmit={handleSend}>
+    <form id="form" className="task-form" onSubmit={handleSend}>
       <input
         className="task-input"
         type="text"
