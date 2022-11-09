@@ -1,6 +1,7 @@
 import "./App.css";
 import LogoImg from "./components/LogoImg";
 import TaskList from "./components/TaskList";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <h1>NoStateNode</h1>
         <TaskList />
       </div>
+      <Footer />
     </div>
   );
 }
