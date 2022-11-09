@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: space-between;
   border: 1px solid #2c1102;
-  border-radius: .6em;
+  border-radius: 0.6em;
   background-color: #b94908;
-  margin: .4em auto;
-  padding: .6em 1em .6em 1.2em;
+  margin: 0.4em auto;
+  padding: 0.6em 1em 0.6em 1.2em;
   width: 85%;
   min-height: 2.5em;
   cursor: pointer;
@@ -21,7 +21,7 @@
 }
 
 .todo-container:nth-child(3n + 3) {
-  background-color: #3b3b4f;
+  background-color: #d3852b;
 }
 
 .todo-txt {
@@ -35,14 +35,12 @@
 }
 
 .todo-icon {
-  font-size: 1.3em;
-  width: 1em;
-  height: 1em;
-  margin: .4em;
+  font-size: 1em;
+  margin: 0.5em;
 }
 
 .todo-container.complete {
-  background-color: #5a01a7;
+  background-color: #a71a01;
   text-decoration: line-through;
 }
 

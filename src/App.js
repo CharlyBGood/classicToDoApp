@@ -8,7 +8,7 @@ function App() {
     <div className="todo-app">
       <LogoImg />
       <div className="todo-list-main">
-        <h1>Save ideas, pending work, resources, etc.</h1>
+        <h2 className="title-description">Save ideas, pending work, resources, etc.</h2>
         <TaskList />
       </div>
       <Footer />
