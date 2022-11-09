@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TaskForm from "./TaskForm";
 import Task from "./Task";
 import "../stylesheets/TaskList.css";
+import { useEffect } from "react";
 
 function TaskList() {
   const [tasks, setTasks] = useState([]);
@@ -14,24 +15,35 @@ function TaskList() {
     }
   };
 
-  const deleteTask = id => {
-    const tasksActual2 = tasks.filter(task => task.id !== id);
-    setTasks(tasksActual2);
-  }
+  useEffect(() => {
+    let data = localStorage.getItem("tasks");
+    if (data) {
+      setTasks(JSON.parse(data));
+    }
+  }, []);
 
-  const completeTask = id => {
-    const tasksActual3 = tasks.map(task => {
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  const deleteTask = (id) => {
+    const tasksActual2 = tasks.filter((task) => task.id !== id);
+    setTasks(tasksActual2);
+  };
+
+  const completeTask = (id) => {
+    const tasksActual3 = tasks.map((task) => {
       if (task.id === id) {
         task.complete = !task.complete;
       }
       return task;
     });
     setTasks(tasksActual3);
-  }
+  };
 
   return (
     <>
-      <TaskForm onSubmit={addTask} />
+      <TaskForm createInput={addTask} />
       <div className="task-list-container">
         {tasks.map((task) => (
           <Task

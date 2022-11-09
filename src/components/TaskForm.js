@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import "../stylesheets/TaskForm.css";
 
-function TaskForm(props) {
+function TaskForm({createInput}) {
   const [input, setInput] = useState("");
-  const form = document.getElementById("form");
+  
 
-  const handleChange = (e) => {
-    setInput(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   setInput(e.target.value);
+  // };
 
   const handleSend = (e) => {
     e.preventDefault();
@@ -18,8 +18,9 @@ function TaskForm(props) {
       text: input,
       complete: false,
     };
-    props.onSubmit(newTask);
-    form.reset();
+    createInput(newTask);
+    setInput("");
+    // props.onSubmit(newTask);
   };
 
   return (
@@ -28,8 +29,9 @@ function TaskForm(props) {
         className="task-input"
         type="text"
         placeholder="Write a Task"
+        value={input}
         name="text"
-        onChange={handleChange}
+        onChange={(e) => setInput(e.target.value)}
       />
       <button className="task-btn">Add</button>
     </form>
