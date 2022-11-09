@@ -8,7 +8,7 @@ function App() {
     <div className="todo-app">
       <LogoImg />
       <div className="todo-list-main">
-        <h1>NoStateNode</h1>
+        <h1>Save ideas, pending work, resources, etc.</h1>
         <TaskList />
       </div>
       <Footer />

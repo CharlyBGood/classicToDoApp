@@ -27,8 +27,10 @@ function TaskList() {
   }, [tasks]);
 
   const deleteTask = (id) => {
-    const tasksActual2 = tasks.filter((task) => task.id !== id);
-    setTasks(tasksActual2);
+    if (window.confirm("Quieres borrar esta entrada?")) {
+      const tasksActual2 = tasks.filter((task) => task.id !== id);
+      setTasks(tasksActual2);
+    }
   };
 
   const completeTask = (id) => {

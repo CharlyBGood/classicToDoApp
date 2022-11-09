@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import "../stylesheets/TaskForm.css";
 
-function TaskForm({createInput}) {
+function TaskForm({ createInput }) {
   const [input, setInput] = useState("");
-  
-
-  // const handleChange = (e) => {
-  //   setInput(e.target.value);
-  // };
 
   const handleSend = (e) => {
     e.preventDefault();
@@ -20,7 +15,6 @@ function TaskForm({createInput}) {
     };
     createInput(newTask);
     setInput("");
-    // props.onSubmit(newTask);
   };
 
   return (
