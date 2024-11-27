@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="todo-app">
-      <LogoImg />
+      <LogoImg />      
       <div className="todo-list-main">
         <h2 className="title-description">Save ideas, pending work, resources, etc.</h2>
         <TaskList />

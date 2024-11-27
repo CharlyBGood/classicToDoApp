@@ -14,20 +14,19 @@
   padding: 0.9em 2em 0.6em 1em;
   border-radius: 0.3em;
   margin: 0.3em;
-  border: 2px solid #b94908;
+  border: 2px solid #4d423c;
   outline: none;
   color: #f5deb3;
 }
 
 .task-btn {
   text-align: center;
-  font-family: Roboto, sans-serif;
   padding: 0.8em;
   outline: none;
   border: none;
   border-radius: 0.3em;
   cursor: pointer;
-  background-color: #c24b06;
+  background-color: #4d423c;
   color: #f5deb3;
   text-transform: capitalize;
   font-size: 1.2em;

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import TaskForm from "./TaskForm";
 import Task from "./Task";
+import { ConfirmationModal } from "./ConfirmationModal";
 import "../stylesheets/TaskList.css";
 import { useEffect } from "react";
 
 function TaskList() {
   const [tasks, setTasks] = useState([]);
+  const [isModalHidden, setIsModalHidden] = useState(true);
+  const [taskToDelete, setTaskToDelete] = useState(null);
 
   const addTask = (task) => {
     if (task.text.trim()) {
@@ -27,10 +30,18 @@ function TaskList() {
   }, [tasks]);
 
   const deleteTask = (id) => {
-    if (window.confirm("Quieres borrar esta entrada?")) {
-      const tasksActual2 = tasks.filter((task) => task.id !== id);
-      setTasks(tasksActual2);
-    }
+    setTaskToDelete(id);
+    setIsModalHidden(false);
+  };
+
+  const cancelDelete = () => {
+    setIsModalHidden(true);
+  };
+
+  const confirmDelete = () => {
+    setTasks(tasks.filter((task) => task.id !== taskToDelete));
+    setIsModalHidden(true);
+    setTaskToDelete(null);
   };
 
   const completeTask = (id) => {
@@ -58,6 +69,11 @@ function TaskList() {
           />
         ))}
       </div>
+      <ConfirmationModal
+        onDeleteCancel={cancelDelete}
+        onDeleteConfirm={confirmDelete}
+        isHidden={isModalHidden}
+      ></ConfirmationModal>
     </>
   );
 }

@@ -1,12 +1,58 @@
 .task-list-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 3% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3% auto;
+}
+
+.modal-content {
+  width: 21%;
+  border: 1px solid #514c42;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #1e1e1e;
+  height: 24%;
+}
+
+.hide-modal {
+  display: none;
+}
+
+.show-modal {
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+  top: 50%;
+  left: 0;
+}
+
+.btn-delete,
+.btn-cancel {
+  padding: 0.5em;
+  color: #f5deb3;
+  background: transparent;
+  margin: 0.5em 0.5em;
+  border-radius: 11%;
+  cursor: pointer;
+}
+
+.btn-delete:hover,
+.btn-cancel:hover {
+  padding: 0.4em;
+  transition: ease-in-out;
 }
 
 @media screen and (max-width: 850px) {
-    .task-list-container {
-        margin: .5em 0;
-    }
+  .task-list-container {
+    margin: 0.5em 0;
+  }
+
+  .modal-content {
+    width: 50%;
+  }
 }
