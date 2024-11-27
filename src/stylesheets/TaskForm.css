@@ -32,6 +32,11 @@
   font-size: 1.2em;
 }
 
+.task-btn:hover {
+  opacity: .8;
+  background-color: #b94908;
+}
+
 @media screen and (max-width: 850px) {
   .task-form {
     flex-direction: column;
