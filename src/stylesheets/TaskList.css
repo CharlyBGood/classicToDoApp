@@ -41,6 +41,19 @@
   cursor: pointer;
 }
 
+.btn-delete {
+    background-color: #c934349f;
+}
+
+.btn-delete:hover {
+    background-color: #c93434;
+}
+
+.btn-cancel:hover {
+    background-color: #f5deb39a;
+    color: #1e1e1e;
+}
+
 .btn-delete:hover,
 .btn-cancel:hover {
   padding: 0.4em;
