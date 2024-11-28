@@ -68,6 +68,7 @@ function TaskList() {
             deleteTask={deleteTask}
           />
         ))}
+        <i>click once to mark as done</i>
       </div>
       <ConfirmationModal
         onDeleteCancel={cancelDelete}

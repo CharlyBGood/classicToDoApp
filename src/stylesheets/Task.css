@@ -34,13 +34,6 @@
   padding: 1em;
 }
 
-.todo-txt:hover {
-  border-radius: 0.6em;
-  text-decoration: line-through;
-  /* background-color: #a71a01;
-  opacity: 0.9; */
-}
-
 .todo-icon {
   font-size: 1em;
   margin: 0.5em;
