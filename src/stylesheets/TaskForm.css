@@ -35,6 +35,7 @@
 .task-btn:hover {
   opacity: .8;
   background-color: #b94908;
+  transition: 1s;
 }
 
 @media screen and (max-width: 850px) {

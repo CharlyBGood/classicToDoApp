@@ -10,7 +10,7 @@
 .title-description {
   text-align: center;
   font-size: 1.1em;
-  color: #f5deb3;  
+  color: #f5deb3;
   /* margin: 1.1em 0; */
 }
 .todo-list-main {
@@ -23,7 +23,6 @@
   border-radius: 0.6em;
   top: 11%;
 }
-
 
 @media screen and (max-width: 850px) {
   .todo-app {
