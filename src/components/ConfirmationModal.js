@@ -8,10 +8,18 @@ export function ConfirmationModal({
       <div className="modal-content">
         <p>Are you sure you want to delete this from list?</p>
         <div className="btn-container">
-          <button className="btn-delete" onClick={onDeleteConfirm}>
+          <button
+            title="Delete"
+            className="btn-delete"
+            onClick={onDeleteConfirm}
+          >
             Delete
           </button>
-          <button className="btn-cancel" onClick={onDeleteCancel}>
+          <button
+            title="Cancel"
+            className="btn-cancel"
+            onClick={onDeleteCancel}
+          >
             Cancel
           </button>
         </div>
